@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", "Montserrat", "Lato", Arial, sans-serif;
+  background: #f7f8fa;
+  color: #23272f;
+}
+
+body {
+  background: #f7f8fa;
+  color: #23272f;
+  font-size: 1rem;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+::selection {
+  background: #dbeafe;
+  color: #1e293b;
+}
+
+a {
+  transition: color 0.2s, background 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+
+button,
+.btn {
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(16, 30, 54, 0.04);
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Inter", Arial, sans-serif;
+  font-weight: 700;
+  color: #23272f;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 24px 0 rgba(16, 30, 54, 0.08);
+  padding: 2rem;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 8px 32px 0 rgba(16, 30, 54, 0.12);
+}
+
+.shadow-smooth {
+  box-shadow: 0 2px 8px 0 rgba(16, 30, 54, 0.04);
+}
+
+.border-smooth {
+  border: 1px solid #e5e7eb;
+}
+
+.rounded-smooth {
+  border-radius: 1.25rem;
+}

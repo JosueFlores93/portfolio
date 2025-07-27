@@ -1,0 +1,60 @@
+---
+const profileImage = "/images/profile.jpg";
+const skills = [
+  { name: "HTML", icon: "simple-icons:html5" },
+  { name: "CSS", icon: "simple-icons:css3" },
+  { name: "JavaScript", icon: "simple-icons:javascript" },
+  { name: "TypeScript", icon: "simple-icons:typescript" },
+  { name: "Angular", icon: "simple-icons:angular" },
+  { name: "Ionic", icon: "simple-icons:ionic" },
+  { name: "Firebase", icon: "simple-icons:firebase" },
+  { name: "Odoo", icon: "simple-icons:odoo" },
+  { name: "Python", icon: "simple-icons:python" },
+  { name: "XMLRPC", icon: "mdi:xml" },
+  { name: "XML", icon: "simple-icons:xml" },
+  { name: "Soporte Técnico", icon: "mdi:headset" },
+  { name: "Automatización", icon: "mdi:robot" },
+  { name: "Desarrollo Web", icon: "mdi:web" },
+  { name: "Git", icon: "simple-icons:git" },
+];
+---
+
+<section id="about" class="bg-white/90 py-20 px-4 rounded-smooth shadow-smooth mx-2">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    <div class="flex-shrink-0 mb-8 md:mb-0">
+      <!-- <img
+        src={profileImage}
+        alt="Josué Flores"
+        class="w-48 h-48 rounded-full shadow-smooth object-cover border-4 border-white"
+      /> -->
+    </div>
+    <div class="flex-1 text-center md:text-left">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Sobre mí</h2>
+      <!-- <p class="text-lg text-gray-700 leading-relaxed mb-4">
+        Soy <span class="font-semibold text-blue-700">Ingeniero Informático</span> con pasión por el desarrollo de software eficiente y automatización de procesos. Tengo experiencia en aplicaciones web e híbridas, soporte técnico e implementación de sistemas.
+      </p>
+      <p class="text-lg text-gray-700 leading-relaxed mb-4">
+        Disfruto aprender nuevas tecnologías, trabajar en equipo y crear soluciones que mejoren la productividad de las empresas.
+      </p> -->
+        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+          Soy <span class="font-semibold text-blue-700">Ingeniero Informático</span> con pasión por el desarrollo de software eficiente, automatización de procesos y la creación de soluciones digitales que aporten valor real.
+          Tengo experiencia en aplicaciones web e híbridas, soporte técnico, implementación de sistemas y desarrollo de módulos personalizados.
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+          Me motiva aprender nuevas tecnologías, colaborar en equipos multidisciplinarios y contribuir a proyectos que impacten positivamente en las personas y organizaciones.
+        </p>
+        <div class="flex flex-wrap gap-3 mt-6 justify-center md:justify-start">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconify/iconify@3.1.1/dist/iconify.min.css" />
+          <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+          {
+            skills.map((skill) => (
+              <span class=" bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-medium shadow-smooth flex items-center gap-2">
+                <span class="iconify" data-icon={skill.icon} style="font-size: 1.2em;"></span>
+                {skill.name}
+              </span>
+            ))
+          }
+        </div>
+    </div>
+  </div>
+</section>

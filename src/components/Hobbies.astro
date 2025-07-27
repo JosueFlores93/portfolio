@@ -1,0 +1,25 @@
+---
+const hobbies = [
+  { name: "Tocar guitarra", icon: "🎸" },
+  { name: "Cantar", icon: "🎤" },
+  { name: "Comics", icon: "📚" },
+  { name: "Anime", icon: "🎬" },
+  { name: "Cocinar", icon: "🍳" },
+];
+---
+
+<section id="hobbies" class="bg-white/90 py-20 px-4 rounded-smooth shadow-smooth mx-2 mt-8">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl font-bold text-gray-900 mb-6">Hobbies</h2>
+    <div class="flex flex-wrap justify-center gap-8 mt-8">
+      {
+        hobbies.map((hobby) => (
+          <div class="flex flex-col items-center">
+            <span class="text-5xl mb-2">{hobby.icon}</span>
+            <span class="text-lg text-gray-700">{hobby.name}</span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
